@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>test</title>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<style type="text/css">
+		.outer{
+			width: 500px;
+			/*height: 300px;*/
+			min-height: 300px;
+			/*max-height: 500px;*/
+			/*overflow-x:hidden;*/
+			/*overflow-y: auto;*/
+			border:1px solid #ccc;
+			background: lightblue;
+			margin:0 auto;
+			margin-top: 100px;
+			position: relative;
+			z-index:10;
+		}
+		.inner{
+			width: 380px;
+			height: 32px;
+			border:1px solid #ececec;
+			background: #1188dd;
+			margin-left: 20px;
+			position: relative;
+		}
+		.in{
+			position: absolute;
+			top:32px;
+			left: 0;
+			width: 360px;
+			height: 500px;
+			border: 2px solid red;
+			background: #fff;
+			padding:10px;
+			z-index: 20;
+		}
+		.dn{
+			display: none;
+		}
+		.oth{
+			width: 200px;
+			height: 32px;
+			line-height: 32px;
+			border:2px solid #000;
+			background: #eee;
+			margin:20px;
+		}
+		.tt{
+			overflow: visible;
+		}
+	</style>
+</head>
+<body>
+
+
+
+<div class="outer">
+        <div class="oth">
+			内容1
+		</div>
+		<div class="oth">
+			内容2
+		</div>
+		<div class="oth">
+			内容3
+		</div>
+		<div class="oth">
+			内容4
+		</div>
+		<div class="oth">
+			内容5
+		</div>
+		<div class="oth">
+			内容6
+		</div>
+		<!-- <div class="oth">
+			内容7
+		</div>
+		<div class="oth">
+			内容8
+		</div>
+		<div class="oth">
+			内容9
+		</div> -->
+	<div class="inner">
+		<div class="tt">
+			<div class="in dn">
+				<p>1.不准大声说话</p>
+				<p>2.组织者组织</p>
+				<p>3.啊啊啊啊</p>
+		    </div>
+		</div>
+<!-- 		<div class="oth">
+			内容2
+		</div>
+		<div class="oth">
+			内容2
+		</div> -->
+	</div>
+</div>
+
+</body>
+<script type="text/javascript">
+	$(".inner").click(function(){
+		if($(".in").hasClass('dn'))
+			$(".in").removeClass('dn');
+		else
+			$(".in").addClass('dn');
+	});
+</script>
+</html>
