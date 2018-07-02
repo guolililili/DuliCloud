@@ -1,10 +1,8 @@
 <template>
-        <!-- Navigation Bar-->
-        <header id="topnav">
+      <div>
+      	<header id="topnav">
             <div class="topbar-main">
                 <div class="container">
-
-                    <!-- Logo container-->
                     <div class="logo">
                         <a href="index.html" class="logo">
                            <!--  <img src="assets/images/logo_dark.png" alt="" height="24" class="logo-lg">
@@ -12,15 +10,11 @@
                         </a>
 
                     </div>
-                    <!-- End Logo container-->
-
-
                     <div class="menu-extras topbar-custom">
 
                         <ul class="list-inline float-right mb-0">
 
                             <li class="menu-item list-inline-item">
-                                <!-- Mobile menu toggle-->
                                 <a class="navbar-toggle nav-link">
                                     <div class="lines">
                                         <span></span>
@@ -28,7 +22,6 @@
                                         <span></span>
                                     </div>
                                 </a>
-                                <!-- End mobile menu toggle-->
                             </li>
                             <li class="list-inline-item dropdown notification-list">
                                 <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
@@ -104,14 +97,9 @@
 
                         </ul>
                     </div>
-                    <!-- end menu-extras -->
-
                     <div class="clearfix"></div>
-
-                </div> <!-- end container -->
+                </div>
             </div>
-            <!-- end topbar-main -->
-
             <div class="navbar-custom">
                 <div class="container">
                     <div id="navigation">
@@ -132,24 +120,16 @@
                             <li class="has-submenu">
                                 <a href="#"><i class="fi-paper"></i>报警信息</a>
                             </li>
-
-                           <!--  <li class="has-submenu">
-                                <a href="#"><i class="fi-paper-stack"></i>Pages</a>
-                            </li>
-
-                            <li class="has-submenu">
-                                <a href="#"><i class="fi-layers"></i>Extras</a>
-                            </li> -->
-
                         </ul>
                     </div> 
                 </div> 
             </div> 
         </header>
-       <!--  <div class="wrapper">
-            <div class="container"> -->
-                <!-- <div class="row">
-                    <div class="col-sm-12">
+           <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                	这是dashboard首页
+                   <!--  <div class="col-sm-12">
                         <div class="page-title-box">
                             <div class="btn-group pull-right">
                                 <ol class="breadcrumb hide-phone p-0 m-0">
@@ -160,14 +140,11 @@
                             </div>
                             <h4 class="page-title">Dashboard</h4>
                         </div>
-                    </div>
-                </div> -->
-          <!--   </div> 
-        </div> -->
-
-
-        <!-- Footer -->
-        <!-- <footer class="footer">
+                    </div> -->
+                </div>
+            </div> 
+        </div>
+          <footer class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
@@ -175,6 +152,6 @@
                     </div>
                 </div>
             </div>
-        </footer> -->
-        <!-- End Footer -->
+        </footer>
+   </div>
 </template>
