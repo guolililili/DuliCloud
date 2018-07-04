@@ -103,8 +103,12 @@
                 <div class="container">
                     <div id="navigation">
                         <ul class="navigation-menu">
+                        	<router-link tag="li" class="has-submenu" v-for="(item) in navList" :to="item.navRoute" active-class
+                        	="active" exact>
+                        		<a><i class="fi-paper"></i>{{item.navName}}</a>
+                        	</router-link>
 
-                            <li class="has-submenu">
+                           <!--  <li class="has-submenu">
                                 <a href="#"><i class="fi-air-play"></i>首页</a>
                             </li>
 
@@ -118,7 +122,7 @@
 
                             <li class="has-submenu">
                                 <a href="#"><i class="fi-paper"></i>报警信息</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div> 
                 </div> 
@@ -127,6 +131,23 @@
 </template>
 <script type="text/javascript">
 export default {
-  	name: 'vheader'
+  	name: 'vheader',
+  	data(){
+  		return {
+  			navList:[{
+  				navName:"首页",
+  				navRoute:'/dashboard'
+  			},{
+  				navName:"设备列表",
+  				navRoute:'/device'
+  			},{
+  				navName:"保养信息",
+  				navRoute:'/maintain'
+  			},{
+  				navName:"报警信息",
+  				navRoute:'/warning'
+  			}]
+  		}
+  	}
 }
 </script>

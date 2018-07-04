@@ -4,7 +4,7 @@
          <div class="wrapper">
             <div class="container">
                 <div class="row">
-                	这是dashboard首页
+                	<!-- 这是dashboard首页 -->
                 </div>
             </div> 
         </div>
