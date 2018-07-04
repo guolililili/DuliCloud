@@ -20,23 +20,25 @@ export default new Router({
     },{
       path: '/Main',
       name: 'Main',
-      component: Main
+      component: Main,
+      children:[
+      {
+	      path: '/Dashboard',
+	      name: 'Dashboard',
+	      component: () => import('@/view/dashboard')
     },{
-      path: '/Dashboard',
-      name: 'Dashboard',
-      component: () => import('@/view/dashboard')
+	      path: '/Device',
+	      name: 'Device',
+	      component: () => import('@/view/device')
     },{
-      path: '/Device',
-      name: 'Device',
-      component: () => import('@/view/device')
+	      path: '/Maintain',
+	      name: 'Maintain',
+	      component: () => import('@/view/maintain')
     },{
-      path: '/Maintain',
-      name: 'Maintain',
-      component: () => import('@/view/maintain')
-    },{
-      path: '/Warning',
-      name: 'Warning',
-      component: () => import('@/view/warning')
+	      path: '/Warning',
+	      name: 'Warning',
+	      component: () => import('@/view/warning')
+    }]
     }
   ]
 })

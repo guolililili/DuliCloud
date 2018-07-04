@@ -1,24 +1,24 @@
 <template>
-<div>
-  <div id="app">
-    <v-header></v-header>    
-    <div class="wrapper">
+<!-- <div>
+ -->  <div id="app">
+<!--     <v-header></v-header>    
+    <div class="wrapper"> -->
           <router-view></router-view>
-    </div>
+<!--     </div>
      <v-footer></v-footer>
-  </div>
+  </div> -->
 </div>
 </template>
 
 <script>
-import vheader from "@/components/layout/header.vue"
-import vfooter from "@/components/layout/footer.vue"
+// import vheader from "@/components/layout/header.vue"
+// import vfooter from "@/components/layout/footer.vue"
   export default {
     name: 'App',
-    components:{
-      "v-header":vheader,
-      "v-footer":vfooter
-    }
+    // components:{
+    //   "v-header":vheader,
+    //   "v-footer":vfooter
+    // }
   }
 </script>
 

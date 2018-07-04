@@ -2,12 +2,13 @@
     <div>
     	<v-header></v-header>
          <div class="wrapper">
-            <div class="container">
+<!--             <div class="container">
                 <div class="row">
-                	<!-- 这是dashboard首页 -->
-                </div>
+ -->                	
+ <router-view></router-view>
+<!--                 </div>
             </div> 
-        </div>
+ -->        </div>
         <v-footer></v-footer>
     </div>
 </template>
