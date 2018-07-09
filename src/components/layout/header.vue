@@ -14,7 +14,7 @@
                         <ul class="list-inline float-right mb-0">
 
                             <li class="menu-item list-inline-item">
-                                <a class="navbar-toggle nav-link">
+                                <a class="navbar-toggle nav-link" v-on:click="navToggle($event)">
                                     <div class="lines">
                                         <span></span>
                                         <span></span>
@@ -63,29 +63,17 @@
                             <li class="list-inline-item dropdown notification-list">
                                 <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
                                    aria-haspopup="false" aria-expanded="false">
-                                    <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle">
+                                    <img src="../../assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle">
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right profile-dropdown " aria-labelledby="Preview">
                                     <!-- item-->
                                     <div class="dropdown-item noti-title">
-                                        <h5 class="text-overflow"><small>Welcome ! John</small> </h5>
+                                        <h5 class="text-overflow"><small>Welcome ! Guoli</small> </h5>
                                     </div>
-
-                                    <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                        <i class="zmdi zmdi-account-circle"></i> <span>Profile</span>
-                                    </a>
-
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item">
                                         <i class="zmdi zmdi-settings"></i> <span>Settings</span>
                                     </a>
-
-                                    <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                        <i class="zmdi zmdi-lock-open"></i> <span>Lock Screen</span>
-                                    </a>
-
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item">
                                         <i class="zmdi zmdi-power"></i> <span>Logout</span>
@@ -99,6 +87,7 @@
                     <div class="clearfix"></div>
                 </div>
             </div>
+            <!-- menu -->
             <div class="navbar-custom">
                 <div class="container">
                     <div id="navigation">
@@ -107,22 +96,6 @@
                         	="active" exact>
                         		<a><i class="fi-paper"></i>{{item.navName}}</a>
                         	</router-link>
-
-                           <!--  <li class="has-submenu">
-                                <a href="#"><i class="fi-air-play"></i>首页</a>
-                            </li>
-
-                            <li class="has-submenu">
-                                <a href="#"><i class="fi-briefcase"></i>设备列表</a>
-                            </li>
-
-                            <li class="has-submenu">
-                                <a href="#"><i class="fi-box"></i>保养信息</a>
-                            </li>
-
-                            <li class="has-submenu">
-                                <a href="#"><i class="fi-paper"></i>报警信息</a>
-                            </li> -->
                         </ul>
                     </div> 
                 </div> 
@@ -148,6 +121,12 @@ export default {
   				navRoute:'/warning'
   			}]
   		}
-  	}
+  	},
+    methods:{
+        navToggle:function(event){
+            $(event.currentTarget).toggleClass('open');
+            $('#navigation').slideToggle(400);
+        }
+    }
 }
 </script>

@@ -1,14 +1,9 @@
 <template>
     <div>
     	<v-header></v-header>
-         <div class="wrapper">
-<!--             <div class="container">
-                <div class="row">
- -->                	
- <router-view></router-view>
-<!--                 </div>
-            </div> 
- -->        </div>
+         <div class="wrapper">     	
+ 			<router-view></router-view>
+		</div>
         <v-footer></v-footer>
     </div>
 </template>
